@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Palette, MapPin, Mic, Lightbulb, Users, Sparkles } from 'lucide-react';
 import transitSketch from 'figma:asset/9298434c85f2c54111515cdaea3611e1c1e4afe3.png';

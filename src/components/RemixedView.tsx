@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform, useSpring } from 'motion/react';
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Header } from './Header';
 import { Footer } from './Footer';
@@ -285,8 +285,13 @@ export function RemixedView({ onBack }: RemixedViewProps) {
                 <motion.polygon
                   points="40,25 35,40 40,38 45,40"
                   fill="currentColor"
-                  animate={{ rotate: [0, 10, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity }}
+                  animate={{ 
+                    rotate: [0, 10, -10, 0] 
+                  }}
+                  transition={{ 
+                    duration: 4, 
+                    repeat: Infinity
+                  }}
                   style={{ transformOrigin: '40px 40px' }}
                 />
               </svg>

@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { 
   Home,
   Compass,
@@ -607,7 +607,7 @@ export function HeroSection() {
             animate={{ 
               opacity: 1, 
               x: 0,
-              scale: [0, 1.2, 0.9, 1.05, 1],
+              scale: 1,
             }}
             transition={{ 
               delay: 1.5, 

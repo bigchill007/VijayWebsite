@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { 
   User, 
@@ -130,12 +130,13 @@ export function AboutMeSection({ onRiverJourneyClick }: AboutMeSectionProps) {
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
             animate={{
               y: [0, -10, 0],
             }}
-            style={{
-              transition: { duration: 3, repeat: Infinity, ease: 'easeInOut' }
+            transition={{
+              y: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
+              opacity: { duration: 0.6 },
+              scale: { duration: 0.6 }
             }}
           >
             {/* Origami Crane Icon */}
